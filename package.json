@@ -1,0 +1,26 @@
+{
+  "name": "taxi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/TeryaevAndrey/taxi-website.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "js",
+    "layout",
+    "html",
+    "scss"
+  ],
+  "author": "Teryaev Andrey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TeryaevAndrey/taxi-website/issues"
+  },
+  "homepage": "https://github.com/TeryaevAndrey/taxi-website#readme"
+}

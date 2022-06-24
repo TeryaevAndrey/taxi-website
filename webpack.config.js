@@ -26,6 +26,10 @@ module.exports = {
                 type: 'asset/resource',
             },
             {
+                test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+                type: 'asset/inline',
+            },
+            {
                 test: /\.m?js$/,
                 exclude: /node_modules/,
                 use: {

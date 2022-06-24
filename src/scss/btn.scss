@@ -1,0 +1,24 @@
+@import 'variables';
+
+.btn_blue,
+.btn_red {
+  font-size: $font-size-small;
+  font-weight: $font-weight-extra-bold;
+  line-height: $line-height-main;
+  border-radius: $border-radius-big;
+}
+
+.btn_blue {
+  background-color: $color-blue;
+  padding: 18px 30px;
+}
+
+.btn_red {
+  background-color: $color-red;
+  padding: 22px 29px;
+}
+
+.btn_transparent {
+  background-color: transparent;
+  border: 2px solid $color-blue;
+}

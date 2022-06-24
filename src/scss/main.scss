@@ -3,6 +3,7 @@
 @import 'variables';
 @import 'btn';
 @import 'header';
+@import 'banner';
 
 * {
   font-family: $font-family-main;
@@ -31,7 +32,8 @@ a {
 
 button,
 input,
-textarea {
+textarea,
+select {
   outline: none;
   border: none;
 }

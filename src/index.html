@@ -1,12 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title></title>
 </head>
+
 <body>
 <section class="banner">
     <div class="container">
@@ -22,24 +25,166 @@
                 <div class="select__wrapper">
                     <span class="select__wrapper-text">Откуда:</span>
                     <select class="banner__form-select" name="where-from">
-                        <option class="banner__form-option" value="Выберете станцию метро">Выберете станцию метро</option>
-                        <option class="banner__form-option" value="Выберете станцию метро">Выберете станцию метро</option>
+                        <option
+                                class="banner__form-option"
+                                value="Выберете станцию метро"
+                        >
+                            Выберете станцию метро
+                        </option>
+                        <option
+                                class="banner__form-option"
+                                value="Выберете станцию метро"
+                        >
+                            Выберете станцию метро
+                        </option>
                     </select>
                 </div>
                 <div class="select__wrapper">
                     <span class="select__wrapper-text">Куда:</span>
                     <select class="banner__form-select" name="where">
-                        <option class="banner__form-option" value="Выберете станцию метро">Выберете станцию метро</option>
+                        <option
+                                class="banner__form-option"
+                                value="Выберете станцию метро"
+                        >
+                            Выберете станцию метро
+                        </option>
                     </select>
                 </div>
                 <div class="select__wrapper">
                     <span class="select__wrapper-text">Выберите дату:</span>
-                    <input class="banner__form-calendar banner__form-select" type="date">
+                    <input
+                            class="banner__form-calendar banner__form-select"
+                            type="date"
+                    />
                 </div>
-                <button class="banner__form-btn btn_red" type="submit">Сосед подвези</button>
+                <button class="banner__form-btn btn_red" type="submit">
+                    Сосед подвези
+                </button>
             </div>
         </div>
     </form>
 </section>
+<main class="main">
+    <div class="advantages">
+        <div class="container">
+            <div class="advantages__inner">
+                <div class="advantages__list">
+                    <div class="advantages__item">
+                        <img
+                                class="advantages__item-img"
+                                src="images/index/advantages-1.svg"
+                                alt="advantages"
+                        />
+                        <h3 class="advantages__item-title">
+                            Знакомства со своими соседями
+                        </h3>
+                        <p class="advantages__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui
+                            donec ac nulla et. Pellentesque aliquam turpis arcu malesuada.
+                            Sed adipiscing massa lobortis tortor dolor purus.
+                        </p>
+                    </div>
+                    <div class="advantages__item">
+                        <img
+                                class="advantages__item-img"
+                                src="images/index/advantages-2.svg"
+                                alt="advantages"
+                        />
+                        <h3 class="advantages__item-title">Экономия времени и денег</h3>
+                        <p class="advantages__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui
+                            donec ac nulla et. Pellentesque aliquam turpis arcu malesuada.
+                            Sed adipiscing massa lobortis tortor dolor purus.
+                        </p>
+                    </div>
+                    <div class="advantages__item">
+                        <img
+                                class="advantages__item-img"
+                                src="images/index/advantages-3.svg"
+                                alt="advantages"
+                        />
+                        <h3 class="advantages__item-title">Наш сервис - бесплатный</h3>
+                        <p class="advantages__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui
+                            donec ac nulla et. Pellentesque aliquam turpis arcu malesuada.
+                            Sed adipiscing massa lobortis tortor dolor purus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="trips">
+        <div class="container">
+            <div class="trips__inner">
+                <h2 class="trips__title section__title">
+                    Последние опубликованные поездки
+                </h2>
+                <div class="trips__list"></div>
+                <button class="trips__btn btn_blue">Показать еще</button>
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <div class="reviews__inner">
+                <h2 class="reviews__title section__title">Отзывы соседей</h2>
+                <div class="reviews__list mySwiper">
+                    <div class="swiper-wrapper"></div>
+                    <div class="reviews__pagination swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="warning">
+        <div class="container">
+            <div class="warning__inner">
+                <p class="warning__text">
+                    Уважаемые пользователи,
+                    мы не можем всех индифицировать, поэтому большая просьба, помогайте
+                    и ездите только со своими соседями
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__list">
+                <div class="footer__col">
+                    <img class="logo__img" src="images/logo.png" alt="logo">
+                    <p class="footer__text">Сосед подвези 2022,
+                        Все права защищены</p>
+                </div>
+                <div class="footer__col">
+                    <ul class="footer__nav">
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="#">О нас</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Как это работает</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Обратная связь</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <ul class="footer__nav">
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Политика конфиденциальности</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Пользовательское соглашение</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Правила сайта</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <p class="footer__text">Присоединяйтесь к нам:</p>
+                    <div class="footer__socials">
+                        <a class="footer__socials-link" href="#">
+                            <img class="footer__socials-img" src="images/socials/vk.png" alt="vk">
+                        </a>
+                        <a class="footer__socials-link" href="#">
+                            <img class="footer__socials-img" src="images/socials/telegram.png" alt="telegram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

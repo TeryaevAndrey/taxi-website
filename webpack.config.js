@@ -48,6 +48,14 @@ module.exports = {
                 {
                     from: path.resolve(__dirname, 'src/images'),
                     to: 'images'
+                },
+                {
+                    from: path.resolve(__dirname, 'src/fonts'),
+                    to: 'fonts'
+                },
+                {
+                    from: path.resolve(__dirname, 'src/icons'),
+                    to: 'icons'
                 }
             ]
         })

@@ -1,0 +1,20 @@
+@import 'variables';
+
+.warning {
+  background-color: $color-more-opacity-blue;
+
+  &__inner {
+    background-image: url('../images/index/warning-bg.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding: 130px 0;
+  }
+
+  &__text {
+    max-width: 605px;
+    font-size: 36px;
+    font-weight: $font-weight-extra-bold;
+    line-height: 48px;
+    color: $color-dark-blue;
+  }
+}

@@ -1,0 +1,67 @@
+@import 'variables';
+
+.reviews {
+  padding: 80px 0;
+
+  &__list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+    margin-top: 65px;
+    overflow: hidden;
+  }
+
+  &__item {
+    width: 400px;
+    box-shadow: 0 8px 19px #EBF0F5;
+
+    &-inner {
+      padding: 15px;
+    }
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $color-opacity-blue;
+  }
+
+  &__info {
+    margin-left: 15px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-purple;
+    padding-top: 15px;
+  }
+
+  &__pagination {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+
+    & .swiper-pagination-bullet {
+      display: flex;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: 1px solid $color-blue;
+
+      & + .swiper-pagination-bullet {
+        margin-left: 15px;
+      }
+
+      &-active {
+        background-color: $color-blue;
+      }
+    }
+  }
+}

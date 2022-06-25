@@ -1,0 +1,54 @@
+@import 'variables';
+
+.footer {
+  background-color: $color-blue;
+  padding: 40px 0;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &__col {
+    max-width: 240px;
+    font-size: 16px;
+    line-height: $line-height-more-main;
+    color: $color-white;
+
+    &:first-child {
+      max-width: 105px;
+    }
+
+    &:first-child {
+      font-size: 10px;
+      line-height: 14px;
+    }
+
+    .footer__nav {
+
+      &-item {
+        list-style-type: none;
+      }
+
+      &-link {
+        color: inherit;
+      }
+    }
+
+    .footer__nav-item + .footer__nav-item {
+      margin-top: 15px;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+
+    &-link + &-link {
+      margin-left: 7px;
+    }
+  }
+}

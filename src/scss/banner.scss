@@ -11,6 +11,7 @@
     background-image: url('../images/index/banner-bg.svg');
     background-repeat: no-repeat;
     background-position: right bottom;
+    background-size: contain;
     min-height: 405px;
   }
 
@@ -32,6 +33,7 @@
   }
 
   &__btn {
+    display: flex;
     margin-top: 30px;
   }
 
@@ -90,5 +92,63 @@
     font-size: 10px;
     font-weight: $font-weight-medium;
     color: $color-gray;
+  }
+}
+
+@media(max-width: 1220px) {
+  .banner {
+
+    &__inner {
+      background-size: 50%;
+    }
+  }
+}
+
+@media(max-width: 500px) {
+  .banner {
+
+    &__inner {
+      justify-content: flex-start;
+    }
+
+    &__title {
+      font-size: 40px;
+      line-height: 52px;
+      text-align: center;
+      margin-top: 35px;
+    }
+
+    &__text {
+      text-align: center;
+      margin: 10px auto 0 auto;
+    }
+
+    &__btn {
+      margin: 20px auto 0 auto;
+    }
+  }
+}
+
+@media(max-width: 420px) {
+  .banner {
+
+    &__inner {
+      min-height: auto;
+      padding-bottom: 200px;
+      background-size: contain;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 44px;
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    &__text {
+      font-size: $font-size-small;
+      text-align: center;
+      margin: 10px auto 0 auto;
+    }
   }
 }

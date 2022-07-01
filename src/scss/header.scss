@@ -128,6 +128,11 @@
 
     .logo {
       margin-left: 0;
+      height: 50px;
+
+      &__img {
+        width: 50px;
+      }
     }
 
     &__btn {

@@ -3,6 +3,7 @@ export const displayHeader = () => {
         <header class="header" id="header">
             <div class="container">
                 <div class="header__inner">
+                    <img class="burger-menu" src="images/menu.svg" alt="menu">
                     <a class="logo" href="#">
                         <img class="logo__img" src="images/logo.png" alt="logo">
                     </a>
@@ -16,16 +17,16 @@ export const displayHeader = () => {
                     </form>
                     <button class="header__btn btn_blue btn_transparent">
                         <i class="icon-plus"></i>
-                        Опубликовать поездку
+                        <span class="header__btn-text">Опубликовать поездку</span>
                     </button>
                     <div class="header__entrance">
                         <a class="header__entrance-link" href="#">
                             <i class="icon-input"></i>
-                            Вход
+                            <span class="header__entrance-text">Вход</span>
                         </a>
                         <a class="header__entrance-link" href="#">
                             <i class="icon-user"></i>
-                            Регистрация
+                            <span class="header__entrance-text">Регистрация</span>
                         </a>
                     </div>
                 </div>

@@ -72,6 +72,8 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 25px;
     }
 
     &-option {
@@ -104,6 +106,15 @@
   }
 }
 
+@media(max-width: 1050px) {
+  .banner {
+
+    &__form-inner {
+      justify-content: flex-start;
+    }
+  }
+}
+
 @media(max-width: 500px) {
   .banner {
 
@@ -125,6 +136,20 @@
 
     &__btn {
       margin: 20px auto 0 auto;
+    }
+
+    &__form {
+
+      &-inner {
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      &-select,
+      &-btn {
+        max-width: 270px;
+        width: 270px;
+      }
     }
   }
 }

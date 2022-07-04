@@ -32,3 +32,18 @@
         }
     }
 }
+
+@media(max-width: 1000px) {
+    .advantages {
+
+        &__list {
+            gap: 100px;
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .advantages {
+        padding: 50px 0;
+    }
+}

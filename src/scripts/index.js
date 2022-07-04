@@ -14,10 +14,20 @@ reviews.map(reviewsRender);
 Swiper.use([Navigation, Pagination]);
 
 let reviewsSwiper = new Swiper('.reviews__list', {
-    slidesPerView: 3,
     spaceBetween: 30,
     pagination: {
         el: '.swiper-pagination',
         clickable: true
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1
+        },
+        800: {
+            slidesPerView: 2
+        },
+        1100: {
+            slidesPerView: 3
+        }
     }
 });

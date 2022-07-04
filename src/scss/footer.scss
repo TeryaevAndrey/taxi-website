@@ -52,3 +52,16 @@
     }
   }
 }
+
+@media(max-width: 760px) {
+  .footer {
+
+    &__list {
+      flex-direction: column;
+    }
+
+    &__col:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+}

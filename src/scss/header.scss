@@ -24,6 +24,7 @@
       margin-left: 10px;
       font-size: 16px;
       font-weight: $font-weight-semi-bold;
+      color: $color-blue;
       margin-right: 30px;
 
       &::placeholder {
@@ -33,18 +34,18 @@
   }
 }
 
-.header__nav {
+.header__text {
   display: flex;
   align-items: center;
   margin-left: 30px;
   margin-right: auto;
 }
 
-.header__link:last-child {
+.header__text-item:last-child {
   margin-left: 30px;
 }
 
-.header__link,
+.header__text,
 .header__entrance-link {
   font-size: 16px;
   font-weight: $font-weight-semi-bold;

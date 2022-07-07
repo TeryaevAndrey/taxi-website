@@ -23,3 +23,18 @@
   background-color: transparent;
   border: 2px solid $color-blue;
 }
+
+.btn_social {
+  padding: 30px 20px;
+  background-color: $color-more-opacity-blue;
+  border-radius: $border-radius-big;
+}
+
+.vk-btn {
+  display: inline-block;
+  background-image: url('../images/vk.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 170px;
+  width: 235px;
+}

@@ -4,21 +4,21 @@ export const displayHeader = () => {
             <div class="container">
                 <div class="header__inner">
                     <img class="burger-menu" src="images/menu.svg" alt="menu">
-                    <a class="logo" href="#">
+                    <a class="logo" href="index.html">
                         <img class="logo__img" src="images/logo.png" alt="logo">
                     </a>
-                    <nav class="header__nav">
-                        <a class="header__link" href="#">Совместные путешествия</a>
-                        <a class="header__link" href="#">Сосед поможет</a>
-                    </nav>
+                    <div class="header__text">
+                        <p class="header__text-item" href="#">Совместные путешествия</p>
+                        <p class="header__text-item" href="#">Сосед поможет</p>
+                    </div>
                     <form class="header__form">
                         <i class="icon-search"></i>
                         <input class="header__form-search" placeholder="Поиск">
                     </form>
-                    <button class="header__btn btn_blue btn_transparent">
+                    <a class="header__btn btn_blue btn_transparent" href="#">
                         <i class="icon-plus"></i>
                         <span class="header__btn-text">Опубликовать поездку</span>
-                    </button>
+                    </a>
                     <div class="header__entrance">
                         <a class="header__entrance-link" href="#">
                             <i class="icon-input"></i>
@@ -34,5 +34,5 @@ export const displayHeader = () => {
         </header>
     `;
 
-    return document.querySelector('body').insertAdjacentHTML('afterbegin', html);
+    return document.querySelector('.page').insertAdjacentHTML('afterbegin', html);
 }

@@ -11,6 +11,7 @@
 @import 'reviews';
 @import 'warning';
 @import 'footer';
+@import 'registration';
 
 * {
   font-family: $font-family-main;
@@ -42,6 +43,12 @@ select {
 
 button {
   cursor: pointer;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .container {

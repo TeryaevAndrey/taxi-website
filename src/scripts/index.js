@@ -1,15 +1,19 @@
 import '../scss/main.scss';
 import Swiper, { Navigation, Pagination } from 'swiper';
-import {displayHeader} from "./header";
-import {tripsItems} from "./trips-items";
-import {tripsRender} from "./index/trips-render";
-import {reviews} from "./reviews";
-import {reviewsRender} from "./index/reviews-render";
+import {displayHeader} from './header';
+import {displayFooter} from './footer';
+import {tripsItems} from './trips-items';
+import {tripsRender} from './index/trips-render';
+import {reviews} from './reviews';
+import {reviewsRender} from './index/reviews-render';
 
 displayHeader();
+displayFooter();
 
-tripsItems.map(tripsRender);
-reviews.map(reviewsRender);
+if(document.querySelector('.trips')) tripsItems.map(tripsRender);
+if(document.querySelector('.reviews')) reviews.map(reviewsRender);
+
+const headerForm = document.querySelector('.header__form');
 
 Swiper.use([Navigation, Pagination]);
 
@@ -31,3 +35,7 @@ let reviewsSwiper = new Swiper('.reviews__list', {
         }
     }
 });
+
+headerForm.addEventListener('focusin', (event) => event.target.style.width = '100px');
+headerForm.addEventListener('focusout', (event) => event.target.style.width = '50px');
+

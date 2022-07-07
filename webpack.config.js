@@ -3,7 +3,7 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 const miniCssExtractPlugin = require('mini-css-extract-plugin');
 const copyWebpackPlugin = require('copy-webpack-plugin');
 
-const pages = ['index'];
+const pages = ['index', 'registration'];
 
 module.exports = {
     entry: path.resolve(__dirname, 'src/scripts/index.js'),

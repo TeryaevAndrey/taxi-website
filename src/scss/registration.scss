@@ -3,6 +3,15 @@
 .registration {
   padding: 60px 0 80px;
 
+  &__title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 48px;
+    color: $color-dark-blue;
+    max-width: 865px;
+    margin: 0 auto;
+  }
+
   &__title-text {
     font-size: $font-size-main;
     font-weight: $font-weight-bold;
@@ -92,6 +101,41 @@
       .registration__method-link {
         color: $color-blue;
       }
+    }
+  }
+}
+
+@media(max-width: 800px) {
+  .registration {
+    padding: 30px 0;
+
+    &__title {
+      font-size: 32px;
+      line-height: 44px;
+    }
+
+    &__method {
+      padding: 24px 0;
+    }
+  }
+}
+
+@media(max-width: 500px) {
+  .registration {
+
+    &__form-input {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@media(max-width: 400px) {
+  .registration {
+
+    .btn_social {
+      padding: 20px 10px;
+      background-size: 125px;
     }
   }
 }

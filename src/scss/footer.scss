@@ -66,3 +66,17 @@
     }
   }
 }
+
+@media(max-width: 600px) {
+  .footer {
+
+    &__list {
+      align-items: center;
+      text-align: center;
+    }
+
+    &__socials {
+      justify-content: center;
+    }
+  }
+}

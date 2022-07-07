@@ -1,14 +1,13 @@
 @import 'variables';
 
 .warning {
+  padding: 80px 0;
   background-color: $color-more-opacity-blue;
 
   &__inner {
-    background-image: url('../images/index/warning-bg.svg');
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: auto;
-    padding: 130px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__text {
@@ -18,31 +17,31 @@
     line-height: 48px;
     color: $color-dark-blue;
   }
+
+  &__img {
+    max-width: 590px;
+    width: 100%;
+  }
 }
 
-@media(max-width: 1000px) {
-  .warning {
+@media(max-width: 1200px) {
+  .warning__inner {
+    flex-direction: column;
 
-    &__inner {
-      background-position: bottom center;
-      background-size: 75%;
-      padding: 130px 0 410px;
-    }
-
-    &__text {
+    .warning__text {
       text-align: center;
       margin: 0 auto;
+    }
+
+    .warning__img {
+      margin-top: 30px;
     }
   }
 }
 
-@media(max-width: 750px) {
+@media(max-width: 800px) {
   .warning {
-
-    &__inner {
-      background-size: contain;
-      padding: 130px 0 375px;
-    }
+    padding: 30px 0;
   }
 }
 
@@ -52,25 +51,6 @@
     &__text {
       font-size: 26px;
       line-height: 32px;
-    }
-  }
-}
-
-@media(max-width: 550px) {
-  .warning {
-
-    &__inner {
-      padding: 50px 0 350px;
-    }
-  }
-}
-
-@media(max-width: 410px) {
-  .warning {
-
-    &__inner {
-      background-size: contain;
-      padding: 50px 0 210px;
     }
   }
 }

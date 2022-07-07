@@ -122,6 +122,10 @@
 @media(max-width: 810px) {
   .header {
 
+    &__text {
+      display: none;
+    }
+
     .burger-menu {
       cursor: pointer;
       order: -1;

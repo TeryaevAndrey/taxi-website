@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Регистрация</title>
+<script defer src="bundle.js"></script></head>
+<body>
+<div class="page">
+    <section class="registration">
+        <div class="container">
+            <h2 class="registration__title section__title">Как вы хотите зарегистрироваться?</h2>
+            <p class="registration__title-text">
+                У вас уже есть учетная запись?
+                <a class="entrance-link" href="#">Войти</a>
+            </p>
+            <div class="registration__method">
+                <p class="registration__method-title">Зарегистрируйтесь с помощью социальных сетей</p>
+                <div class="registration__method-list">
+                    <p class="registration__method-text">Зарегистрироваться с помощью</p>
+                    <a class="registration__social-link btn_social vk-btn" href="#"></a>
+                </div>
+            </div>
+            <form class="registration__form" action="">
+                <div class="registration__method">
+                    <p class="registration__method-title">Зарегистрироваться по электронной почте</p>
+                    <div class="input__wrapper select__wrapper">
+                        <span class="input__wrapper-text select__wrapper-text">ВВведите E-mail</span>
+                        <input class="registration__form-input banner__form-select" type="text" name="email"
+                               autocomplete="off" placeholder="mail@mail.ru">
+                    </div>
+                    <div class="input__wrapper select__wrapper">
+                        <span class="input__wrapper-text select__wrapper-text">Придумайте пароль:</span>
+                        <input class="registration__form-input banner__form-select" type="password" name="password"
+                               placeholder="•••••••••••••••••••••••••">
+                    </div>
+                </div>
+                <div class="registration__method">
+                    <p class="registration__method-title">Зарегистрируйтесь с помощью номера телефона</p>
+                    <div class="input__wrapper select__wrapper">
+                        <span class="input__wrapper-text select__wrapper-text">Введите номер телефона</span>
+                        <input class="registration__form-input banner__form-select" type="tel" name="tel"
+                               placeholder="78561234523">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+</body>
+</html>
